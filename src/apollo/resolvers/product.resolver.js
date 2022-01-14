@@ -15,6 +15,7 @@ module.exports = {
                 {
                     title: args.title,
                     description: args.description,
+                    img_uri: args.img_uri,
                     price: args.price
                 }
             )

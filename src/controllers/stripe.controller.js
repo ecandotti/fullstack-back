@@ -19,7 +19,7 @@ exports.checkoutSession = async (req, res) => {
     cancel_url: `${req.headers.origin}/?canceled=true`
   });
 
-  res.redirect(303, session.url);
+  res.status(200).json(session.url);
 };
 
 exports.verifyToken = (req, res) => {
